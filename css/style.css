@@ -1,10 +1,112 @@
-footer {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-footer img {
+/* Style pour le body */
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Style pour le header */
+  header {
+    position: relative;
+    transform: perspective(100px) translateZ(30px);
+    z-index: 2;
+  }
+  
+  header h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  /* Style pour la navigation */
+  nav {
+    position: relative;
+    transform: perspective(100px) translateZ(-30px);
+    z-index: 1;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    z-index: 100;
+    display: none;
+  }
+  
+  nav ul ul li {
+    display: block;
+    width: 200px;
+  }
+  
+  nav ul ul a {
+    color: #333 !important;
+    padding: 10px;
+  }
+  
+  nav ul ul a:hover {
+    background-color: #333;
+    color: #fff !important;
+  }
+  
+  nav li:hover > ul {
+    display: block;
+  }
+  
+  /* Style pour le footer */
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+  }
+  
+  footer p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style pour les images */
+  img {
     max-width: 100%;
     height: auto;
-}
+  }
+  
